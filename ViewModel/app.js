@@ -1,4 +1,9 @@
 var username
+var petname
+var pethunger
+var petclean
+var petlove
+
 
 function submitRegister() {
 	$.ajax({
