@@ -18,7 +18,7 @@
 				</li>
 			</ul>
 		</nav>
-		<form method="post" class="form-signin">
+		<form method="post" class="form-signin" id="register" action="" onsubmit="return false">
 			<h2 class="form-signin-heading">Please sign up</h2>
 			<span>Username</span>
 			<label for="username" class="sr-only">Username</label>
@@ -38,10 +38,11 @@
 					<span>Remember me</span>
 				</label>
 			</div>
-			<button type="submit" class="btn btn-1g btn-primary btn-block">Sign up</button>
+			<button type="submit" onclick="submitRegister()" class="btn btn-1g btn-primary btn-block">Sign up</button>
 		</form>
 	</div>
 	<script src="../public/js/jquery-3.2.1.min.js"></script>
 	<script src="../public/js/jquery-3.2.1.min.js"></script>
+	<script src="../ViewModel/app.js"></script>
 </body>
 </html>
