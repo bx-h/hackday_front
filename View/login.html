@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in</title>
+</head>
+<link rel="stylesheet" href="../public/css/bootstrap.css">
+<link rel="stylesheet" href="../public/css/style.css">
+<body>
+	<div class="container">
+		<nav>
+			<ul class="nav nav-pills float-right">
+				<li class="nav-item">
+					<a href="http://localhost:8080/hackday/View/login.html" class="nav-link active">Signin</a>
+					<span class="sr-only">(current)</span>
+				</li>
+				<li class="nav-item">
+					<a href="http://localhost:8080/hackday/View/register.html" class="nav-link">Signup</a>
+				</li>
+			</ul>			
+		</nav>
+		<form method="post" class="form-signin">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<label for="username" class="sr-only">Username</label>
+			<input id="username" placeholder="Username" name="username" required autofocus class="form-control">
+			<label for="password" class="sr-only">Password</label>
+			<input id="password" placeholder="Password" name="password" required autofocus class="form-control">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="remember-me">
+					<span>Remember me</span>
+				</label>
+			</div>
+			<button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+		</form>
+	</div>
+</body>
+</html>

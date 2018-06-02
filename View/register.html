@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Signup</title>
+	<link rel="stylesheet" href="../public/css/bootstrap.css">
+	<link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul class="nav nav-pills float-right">
+				<li class="nav-item">
+					<a href="http://localhost:8080/hackday/View/login.html" class="nav-link">Signin</a>
+					<span class="sr-only">(current)</span>
+				</li>
+				<li class="nav-item">
+					<a href="http://localhost:8080/hackday/View/register.html" class="nav-link active">Signup</a>
+				</li>
+			</ul>
+		</nav>
+		<form method="post" class="form-signin">
+			<h2 class="form-signin-heading">Please sign up</h2>
+			<span>Username</span>
+			<label for="username" class="sr-only">Username</label>
+			<input id="username" placeholder="Username" required autofocus name="username" class="form-control">
+			<span>Password</span>
+			<label for="password" class="sr-only">Password</label>
+			<input id="password" placeholder="Password" required  name="password" class="form-control">
+			<span>ConfirmPassword</span>
+			<label for="password2" class="sr-only">ConfirmPassword</label>
+			<input id="password2" placeholder="ConfirmPassword" required name="password2" class="form-control">
+			<span>Email</span>
+			<label for="email" class="sr-only">Email</label>
+			<input id="email" placeholder="Email" required name="email" class="form-control">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="remember-me">
+					<span>Remember me</span>
+				</label>
+			</div>
+			<button type="submit" class="btn btn-1g btn-primary btn-block">Sign up</button>
+		</form>
+	</div>
+	<script src="../public/js/jquery-3.2.1.min.js"></script>
+	<script src="../public/js/jquery-3.2.1.min.js"></script>
+</body>
+</html>
