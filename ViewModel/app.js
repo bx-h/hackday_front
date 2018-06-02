@@ -1,12 +1,17 @@
 function submitRegister() {
-	$('#register').ajaxSubmit(function(message){
-		if (true == true) {
-			window.location.replace="http://localhost:8080/hackday/View/login.html";
-		}
-		else {
-			alert("invalid");
+	$.ajax({
+		type: "POST",
+		url: "http://192.168.1.9:8000/signUp/",
+		dataType: "JSON",
+		crossDomain: true,
+		data: $('#register').serialize(),
+		success: function (result) {
+			console.log(result);
+
+
+		},
+		error: function (result) {
+			console.log(result);
 		}
 	});
-
-	return false;
 }
