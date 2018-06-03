@@ -138,12 +138,12 @@ function showOnePet(){
 		url: url + "showOnePet/",
 		dataType: "JSON",
 		crossDomain: true,
-		data: {
-			"petname" : petname,
-		},
+		data:$('#login').serialize(), // {
+		//	"petname" : petname,
+		//},
 		success: function (res) {
 			//列表操作
-
+			console.log(res)
 		}
 	});
 }
