@@ -3,7 +3,7 @@ var petname
 var pethunger
 var petclean
 var petlove
-var url = "http://127.0.0.1:8000/"
+var url = "http://45.40.240.199:8003/"
 
 function submitRegister() {
 	$.ajax({
@@ -43,14 +43,21 @@ function login(){
 			else{
 				
 				username = res.username
+				console.log("username:",username)
+				
+				
 				alert("登录成功")
-				window.location.replace("index.html")
+				window.location.replace("dashboard.html?username=" + username )
+				
 			}
 
 		}
 	});
 
 }
+
+
+
 
 function getUserStatus(){
 	$.ajax({
@@ -66,13 +73,16 @@ function getUserStatus(){
 				petname = 0
 				console.log("noPet")
 			}else{
-				petname = res.petname
-				console.log(res)
+				petname = res.petname;
+				console.log("pet:",petname);
+				return 1
+				
 			}
 
 		}
 	});
 }
+
 
 
 //宠物部分
@@ -225,6 +235,8 @@ function cleanPet(){
 			petclean = res.petclean
  			petlove = res.petlove
  			console.log("success")
+ 			 console.log("clean:",petclean)
+ 			console.log("love:",petlove)
 		}
 	});
 }
