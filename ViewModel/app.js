@@ -54,18 +54,20 @@ function login(){
 
 function getUserStatus(){
 	$.ajax({
-		type: "POST",
+		type: "GET",
 		url: url + "getUserStatus/",
 		dataType: "JSON",
 		crossDomain: true,
 		data: {
-			"username" : username,
+			 "username" : username,
 		},
 		success: function (res) {
-			if(res == "noPet"){
+			if(res == "0"){
 				petname = 0
+				console.log("noPet")
 			}else{
 				petname = res.petname
+				console.log(res)
 			}
 
 		}
@@ -85,7 +87,8 @@ function createPet(){
 			//"petname" :           //引入宠物名 
 		},
 		success: function (res) {
-			if(res == 'success'){
+			console.log(res)
+			if(res === 1){
 				alert("创建宠物成功")
 			}
 			else{
@@ -168,7 +171,7 @@ function followFriends(){
 
 function havePet(){
 	$.ajax({
-		type: "GET",
+		type: "POST",
 		url: url + "havePet/",
 		dataType: "JSON",
 		crossDomain: true,
@@ -177,7 +180,7 @@ function havePet(){
 			//"petname" :    //宠物名字获取
 		},
 		success: function (res) {
-			if (res == "success"){
+			if (res == 1){
 				alert("Success")
 			}else{
 				alert("Failed")
@@ -189,17 +192,20 @@ function havePet(){
 
 function feedPet(){
 	$.ajax({
-		type: "GET",
+		type: "POST",
 		url: url + "feedPet/",
 		dataType: "JSON",
 		crossDomain: true,
 		data: {
-			"username" : username,
+			//"username" : username,
 			"petname" : petname          //引入宠物名 
 		},
 		success: function (res) {
 			pethunger = res.pethunger
  			petlove = res.petlove
+ 			console.log("success")
+ 			console.log("hunger:",pethunger)
+ 			console.log("love:",petlove)
 
 		}
 	});
@@ -207,18 +213,18 @@ function feedPet(){
 
 function cleanPet(){
 	$.ajax({
-		type: "GET",
+		type: "POST",
 		url: url + "cleanPet/",
 		dataType: "JSON",
 		crossDomain: true,
 		data: {
-			"username" : username,
+			//"username" : username,
 			"petname" : petname          //引入宠物名 
 		},
 		success: function (res) {
 			petclean = res.petclean
  			petlove = res.petlove
-
+ 			console.log("success")
 		}
 	});
 }
