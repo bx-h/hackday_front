@@ -1,0 +1,146 @@
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+.apb {
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 90px;
+  height: 90px;
+  transition: all 1s;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -weblit-border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+#control-ring-container:hover + .apb {
+  transform:scale(2);
+  background-size: 75%, 55%;
+}
+
+#control-ring-container {
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 90px;
+  height: 90px;
+  z-index: 2;
+}
+
+#control-ring {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+
+
+li {
+  list-style-type: none;
+}
+
+li.img {
+  float: left;
+  padding-right: 5px;
+}
+
+
+.mask_button {
+  top: 0px;
+  left:0px;
+  opacity: 0;
+  position: absolute;
+  transition: all 1s;
+  background-image: url("../imgs/bone.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#control-ring:hover > .mask_button{
+  width: 90px;
+  height: 90px;
+  transform: translate(-80px, -30px);
+  opacity: 1;
+}
+
+
+.history_button {
+  top:0px;
+  left:0px;
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+  background-image: url("../imgs/shower.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#control-ring:hover > .history_button {
+  width: 90px;
+  height: 90px;
+  transform: translate(-80px, 40px);
+  opacity: 1;
+}
+
+.message_button {
+  top:0px;
+  left:0px;
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+  background-image: url("../imgs/travel.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#control-ring:hover > .message_button {
+  width: 90px;
+  height: 90px;
+  transform: translate(-30px, 80px);
+  opacity: 1;
+}
+
+.menu_button {
+  top: 0px;
+  left:0px;
+  opacity: 0;
+  position: absolute;
+  transition: all 1s;
+  background-image: url("../imgs/menu.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#control-ring:hover > .menu_button{
+  width: 80px;
+  height: 80px;
+  transform: translate(30px, 80px);
+  opacity: 1;
+}
+
+
+.icon {
+  background-image: url("../imgs/main.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,78 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.home {
+	background-image: url("../imgs/home.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 900px;
+	height: 600px;
+	position: relative;
+}
+
+.mine {
+	bottom: -35px;
+
+	position: absolute;
+
+}
+
+.usrmessage {
+	width: 290px;
+	height: 500px;
+	left: 0;
+	top: 250px;
+	position: absolute;
+
+}
+
+.petmessage {
+	width: 290px;
+	height: 500px;
+	left: 0;
+	top: 250px;
+	position: absolute;
+}
+
+.usrTable {
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	left: 100px;
+	position: relative;
+	z-index: 1;
+}
+
+.petTable {
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	left: 10px;
+	position: relative;
+	z-index: 1;
+
+}
