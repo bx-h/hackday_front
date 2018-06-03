@@ -235,7 +235,7 @@ function cleanPet(){
 			petclean = res.petclean
  			petlove = res.petlove
  			console.log("success")
- 			 console.log("clean:",petclean)
+ 			console.log("clean:",petclean)
  			console.log("love:",petlove)
 		}
 	});
